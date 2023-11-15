@@ -16,13 +16,6 @@ namespace Tests.Integration.Main
             SceneManager.LoadScene("Assets/Scenes/Main.unity");
         }
 
-        [Test]
-        public void CountdownTimerExistsOnSceneLoad()
-        {
-            var countdownText = new GameObject("CountdownText");
-            Assert.IsNotNull(countdownText);
-        }
-
         [UnityTest]
         public IEnumerator TimerCountsDownOnSceneLoad()
         {
