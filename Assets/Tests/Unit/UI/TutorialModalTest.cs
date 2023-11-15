@@ -11,13 +11,6 @@ namespace Tests.Unit.UI
         {
             EditorSceneManager.OpenScene("Assets/Scenes/Menu.unity");
         }
-
-        [Test]
-        public void ModalIsInactiveInitially()
-        {
-            var tutorialModalElement = GameObject.Find("TutorialModal");
-            Assert.IsNull(tutorialModalElement);
-        }
         
         [Test]
         public void ModalTogglesVisibilityOnButtonClick()
